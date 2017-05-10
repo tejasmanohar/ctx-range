@@ -6,7 +6,7 @@ An experimental, generic, [context]-aware `range` for Go.
 
 Sometimes, you want to range over channels returned by functions and semantically
 
-```
+```go
 out := make(chan out)
 Range(ctx, in, out)
 for v := range out {
